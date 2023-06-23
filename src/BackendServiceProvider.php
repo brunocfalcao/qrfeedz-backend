@@ -2,9 +2,9 @@
 
 namespace QRFeedz\Backend;
 
-use Illuminate\Support\ServiceProvider;
+use QRFeedz\Foundation\Abstracts\QRFeedzServiceProvider;
 
-class BackendServiceProvider extends ServiceProvider
+class BackendServiceProvider extends QRFeedzServiceProvider
 {
     public function boot()
     {
