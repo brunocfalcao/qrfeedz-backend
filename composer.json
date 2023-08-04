@@ -19,11 +19,7 @@
         "php": "^8.1",
         "illuminate/contracts": "^10.0",
         "brunocfalcao/qrfeedz-cube": "dev-master",
-        "brunocfalcao/laravel-tracer": "dev-master",
-        "brunocfalcao/laravel-logger": "dev-master",
-        "brunocfalcao/laravel-helpers": "dev-master",
-        "brunocfalcao/qrfeedz-foundation": "dev-master",
-        "brunocfalcao/qrfeedz-authorization": "dev-master"
+        "brunocfalcao/laravel-tracer": "dev-master"
     },
     "autoload": {
         "psr-4": {
