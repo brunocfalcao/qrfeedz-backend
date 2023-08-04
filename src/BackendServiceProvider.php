@@ -3,7 +3,6 @@
 namespace QRFeedz\Backend;
 
 use Brunocfalcao\Tracer\Middleware\VisitTracing;
-use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\Facades\Route;
 use QRFeedz\Foundation\Abstracts\QRFeedzServiceProvider;
 
