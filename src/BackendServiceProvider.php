@@ -4,6 +4,7 @@ namespace QRFeedz\Backend;
 
 use Brunocfalcao\Tracer\Middleware\VisitTracing;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\View;
 use QRFeedz\Foundation\Abstracts\QRFeedzServiceProvider;
 
 class BackendServiceProvider extends QRFeedzServiceProvider
@@ -12,11 +13,17 @@ class BackendServiceProvider extends QRFeedzServiceProvider
     {
         $this->loadViews();
         $this->overrideResources();
+        $this->registerViewComposers();
     }
 
     public function register()
     {
         //
+    }
+
+    protected function registerViewComposers()
+    {
+        View::composer('*', 'QRFeedz\Backend\View\Composers\SidebarComposer');
     }
 
     protected function loadViews()
