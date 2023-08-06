@@ -10,9 +10,7 @@
     <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>{{ config('app.name') }} @isset($title)
-            - {{ $title }}
-        @endisset
+    <title>@isset($title){{ $title }}@else{{ config('app.name') }}@endisset
     </title>
 
     <!-- CSS & JS Assets -->
@@ -46,7 +44,7 @@
     <x-app-preloader></x-app-preloader>
 
     <!-- Page Wrapper -->
-    <div id="root" class="min-h-100vh flex grow bg-slate-50 dark:bg-navy-900" x-cloak>
+    <div id="root" class="min-h-100vh flex grow bg-slate-200 dark:bg-navy-900" x-cloak>
 
         {{ $slot }}
 

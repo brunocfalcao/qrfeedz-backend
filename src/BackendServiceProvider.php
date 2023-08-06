@@ -2,8 +2,7 @@
 
 namespace QRFeedz\Backend;
 
-use Brunocfalcao\Tracer\Middleware\VisitTracing;
-use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\Facades\View;
 use QRFeedz\Foundation\Abstracts\QRFeedzServiceProvider;
 
@@ -14,6 +13,8 @@ class BackendServiceProvider extends QRFeedzServiceProvider
         $this->loadViews();
         $this->overrideResources();
         $this->registerViewComposers();
+        $this->registerAnonymousBladeComponents();
+        $this->loadTranslations();
     }
 
     public function register()
@@ -26,6 +27,11 @@ class BackendServiceProvider extends QRFeedzServiceProvider
         View::composer('*', 'QRFeedz\Backend\View\Composers\SidebarComposer');
     }
 
+    protected function loadTranslations()
+    {
+        $this->loadTranslationsFrom(__DIR__.'/../lang', 'qrfeedz-backend');
+    }
+
     protected function loadViews()
     {
         $this->loadViewsFrom(
@@ -34,24 +40,17 @@ class BackendServiceProvider extends QRFeedzServiceProvider
         );
     }
 
-    protected function loadRoutes()
-    {
-        // Load default backend routes.
-        $routesPath = __DIR__.'/../routes/backend.php';
-
-        Route::middleware([
-            'web',
-            VisitTracing::class,
-        ])
-            ->group(function () use ($routesPath) {
-                include $routesPath;
-            });
-    }
-
     protected function overrideResources()
     {
         $this->publishes([
             __DIR__.'/../resources/overrides/' => base_path('/'),
         ], 'qrfeedz-backend-overrides');
+    }
+
+    protected function registerAnonymousBladeComponents()
+    {
+        Blade::anonymousComponentPath(
+            __DIR__.'/../resources/views/components'
+        );
     }
 }
