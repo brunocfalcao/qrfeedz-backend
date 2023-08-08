@@ -10,5 +10,7 @@ return [
     'enter-password' => 'And your password here',
     'remember-me' => 'Remember me',
     'forgot-password' => 'Forgot password?',
-    'sign-in' => 'Log in'
+    'sign-in' => 'Log in',
+    'issues-disclaimer' => 'If any issues please contact support',
+    'here' => 'here'
 ];

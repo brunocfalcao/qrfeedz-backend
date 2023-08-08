@@ -574,11 +574,11 @@ class SidebarPanel
                 [
                     'dashboards_crm_analytics' => [
                         'title' => 'CRM Analytics',
-                        'route_name' => 'dashboards/crm-analytics',
+                        'route_name' => 'backend.home',
                     ],
                     'dashboards_orders' => [
                         'title' => 'Orders',
-                        'route_name' => 'dashboards/orders',
+                        'route_name' => 'backend.home',
                     ],
                 ],
                 [
@@ -587,11 +587,11 @@ class SidebarPanel
                         'submenu' => [
                             'dashboards_crypto_1' => [
                                 'title' => 'Cryptocurrency v1',
-                                'route_name' => 'dashboards/crypto-1',
+                                'route_name' => 'backend.home',
                             ],
                             'dashboards_crypto_2' => [
                                 'title' => 'Cryptocurrency v2',
-                                'route_name' => 'dashboards/crypto-2',
+                                'route_name' => 'backend.home',
                             ],
                         ],
                     ],
@@ -600,71 +600,71 @@ class SidebarPanel
                         'submenu' => [
                             'dashboards_banking_1' => [
                                 'title' => 'Banking v1',
-                                'route_name' => 'dashboards/banking-1',
+                                'route_name' => 'backend.home',
                             ],
                             'dashboards_banking_2' => [
                                 'title' => 'Banking v2',
-                                'route_name' => 'dashboards/banking-2',
+                                'route_name' => 'backend.home',
                             ],
                         ],
                     ],
                     'dashboards_personal' => [
                         'title' => 'Personal',
-                        'route_name' => 'dashboards/personal',
+                        'route_name' => 'backend.home',
                     ],
                     'dashboards_cms_analytics' => [
                         'title' => 'CMS Analytics',
-                        'route_name' => 'dashboards/cms-analytics',
+                        'route_name' => 'backend.home',
                     ],
                     'dashboards_influencer' => [
                         'title' => 'Influencer',
-                        'route_name' => 'dashboards/influencer',
+                        'route_name' => 'backend.home',
                     ],
                     'dashboards_travel' => [
                         'title' => 'Travel',
-                        'route_name' => 'dashboards/travel',
+                        'route_name' => 'backend.home',
                     ],
                     'dashboards_teacher' => [
                         'title' => 'Teacher',
-                        'route_name' => 'dashboards/teacher',
+                        'route_name' => 'backend.home',
                     ],
                     'dashboards_education' => [
                         'title' => 'Education',
-                        'route_name' => 'dashboards/education',
+                        'route_name' => 'backend.home',
                     ],
                     'dashboards_authors' => [
                         'title' => 'Authors',
-                        'route_name' => 'dashboards/authors',
+                        'route_name' => 'backend.home',
                     ],
                     'dashboards_doctor' => [
                         'title' => 'Doctor',
-                        'route_name' => 'dashboards/doctor',
+                        'route_name' => 'backend.home',
                     ],
                     'dashboards_employees' => [
                         'title' => 'Employees',
-                        'route_name' => 'dashboards/employees',
+                        'route_name' => 'backend.home',
                     ],
                     'dashboards_workspaces' => [
                         'title' => 'Workspaces',
-                        'route_name' => 'dashboards/workspaces',
+                        'route_name' => 'backend.home',
                     ],
                     'dashboards_meetings' => [
                         'title' => 'Meetings',
-                        'route_name' => 'dashboards/meetings',
+                        'route_name' => 'backend.home',
                     ],
                     'dashboards_project_boards' => [
                         'title' => 'Project Boards',
-                        'route_name' => 'dashboards/project-boards',
+                        'route_name' => 'backend.home',
                     ],
                 ],
                 [
                     'dashboards_widget_ui' => [
                         'title' => 'Widget UI',
-                        'route_name' => 'dashboards/widget-ui',
+                        'route_name' => 'backend.home',
                     ],
                     'dashboards_widget_contacts' => [
                         'title' => 'Widget Contacts',
-                        'route_name' => 'dashboards/widget-contacts',
+                        'route_name' => 'backend.home',
                     ],
                 ],
             ],
