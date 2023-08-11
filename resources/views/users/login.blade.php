@@ -61,7 +61,7 @@
                                 type="checkbox" />
                             <span class="line-clamp-1">@lang('qrfeedz-backend::login.remember-me')</span>
                         </label>
-                        <a href="#"
+                        <a href="{{ route('password.request') }}"
                             class="text-xs text-slate-400 transition-colors line-clamp-1 hover:text-slate-800 focus:text-slate-800 dark:text-navy-300 dark:hover:text-navy-100 dark:focus:text-navy-100">@lang('qrfeedz-backend::login.forgot-password')</a>
                     </div>
                     <button

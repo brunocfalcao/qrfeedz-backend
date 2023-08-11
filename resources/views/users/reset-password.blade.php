@@ -1,4 +1,4 @@
-<x-base-layout title="Reset your password">
+<x-base-layout title="{{ __('qrfeedz-backend::reset-user-password.form-reset-password.title') }}">
     <main class="grid w-full grow grid-cols-1 place-items-center">
         <div class="w-full max-w-[26rem] p-4 sm:px-5">
             <div class="text-center">

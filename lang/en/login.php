@@ -12,5 +12,5 @@ return [
     'forgot-password' => 'Forgot password?',
     'sign-in' => 'Log in',
     'issues-disclaimer' => 'If any issues please contact support',
-    'here' => 'here'
+    'here' => 'here',
 ];
