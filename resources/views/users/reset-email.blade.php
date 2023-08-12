@@ -15,7 +15,7 @@
             <form method="POST" action="{{ route('password.email') }}">
                 @csrf
 
-                <div class="card mt-5 rounded-lg p-5 lg:p-7">
+                <div class="card mt-5 rounded-lg p-5 lg:p-7 text-center">
 
                     @if (session('status'))
                         <div class="alert alert-success" role="alert">
@@ -25,7 +25,7 @@
                     <label class="block">
                         <span>@lang('qrfeedz-backend::reset-user-password.form-email-password.email')</span>
                         <span class="relative mt-1.5 flex">
-                            <input name="email"
+                            <input name="email" value="{{ old('email') }}"
                                 class="form-input peer w-full rounded-lg border border-slate-300 bg-transparent px-3 py-2 pl-9 placeholder:text-slate-400/70 hover:z-10 hover:border-slate-400 focus:z-10 focus:border-primary dark:border-navy-450 dark:hover:border-navy-400 dark:focus:border-accent"
                                 placeholder="@lang('qrfeedz-backend::reset-user-password.form-email-password.enter-email')" type="text" />
                             <span
