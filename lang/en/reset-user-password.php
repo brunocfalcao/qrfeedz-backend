@@ -19,6 +19,6 @@ return [
         'enter-email' => 'Enter your email',
         'send-link' => 'Send change password email',
         'subcopy' => 'We will send you an email with a link to reset your password',
-        'status' => 'An email was sent to you to reset your password. Please check your junk folder in case you didn\'t receive it'
+        'status' => 'An email was sent to you to reset your password. Please check your junk folder in case you didn\'t receive it',
     ],
 ];
